@@ -1,0 +1,18 @@
+Convert an image to grayscale.
+
+The code is written for a mini-project of ITCS 5145 Parallel Programming at UNCC.(Q.C.)
+
+To compile the code, we use
+        gcc -g -Wall -o color2gray stb_image/stb_image.h stb_image/stb_image_write.h color2gray.c -lm
+
+To run the code, type
+        ./color2gray ${input color image} ${output grayscale image} ${image type}
+
+        The format of images depends on its types.
+        To specify image type, we have ${image type} as follows:
+            1 is for .png file
+            2 is for .jpg file
+        
+        For example,
+        ./color2gray lena1.png lena2.png 1
+        ./color2gray lizard1.jpg lizard2.jpg 2
